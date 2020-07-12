@@ -1,0 +1,55 @@
+### Rails ###
+/project_rails/*.rbc
+/project_rails/capybara-*.html
+/project_rails/.rspec
+/project_rails/db/*.sqlite3
+/project_rails/db/*.sqlite3-journal
+/project_rails/public/system
+/project_rails/coverage/
+/project_rails/spec/tmp
+/project_rails/*.orig
+/project_rails/rerun.txt
+/project_rails/pickle-email-*.html
+
+# Ignore all logfiles and tempfiles.
+/project_rails/log/*
+/project_rails/tmp/*
+/project_rails/!/log/.keep
+/project_rails/!/tmp/.keep
+
+# secrets
+/project_rails/config/initializers/secret_token.rb
+/project_rails/config/master.key
+# config/secrets.yml
+
+## Environment normalization:
+/project_rails/.bundle
+/project_rails/vendor/bundle
+
+# environment:
+
+/project_rails/.rvmrc
+/project_rails/vendor/assets/bower_components
+/project_rails/*.bowerrc
+/project_rails/bower.json
+/project_rails/.powenv
+/project_rails/.byebug_history
+/project_rails/node_modules/
+/project_rails/yarn-error.log
+/project_rails/yarn-debug.log*
+/project_rails/.yarn-integrity
+
+# Ignore precompiled javascript packs
+/project_rails/public/packs
+/project_rails/public/packs-test
+/project_rails/public/assets
+
+# Ignore uploaded files in development
+/project_rails/storage/*
+/project_rails/!/storage/.keep
+
+# dotenv
+.env
+
+# postgres
+/postgres/*
