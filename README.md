@@ -2,7 +2,7 @@
 &nbsp;
 
 ```sh
-$ git clone git@github.com:s030827/initial_docker_rails_6.git
+$ git clone git@github.com:s030827/docker_compose_for_ruby_on_rails.git
 ```
 - Create a .env file on the root folder.
 
@@ -10,7 +10,7 @@ $ git clone git@github.com:s030827/initial_docker_rails_6.git
 $ touch .env
 ```
 
-- Enter into rails_app folder and create rails project wit your preferences.
+- Enter into rails_app folder and create rails project with your preferences.
 
 ```sh
 $ cd rails_app
@@ -18,7 +18,7 @@ $ rails new . --webpack --database=postgresql -T
 ```
 
 > Obs:
-> If you don't have rails installed you can run follows steps on the [docker-compose](https://docs.docker.com/compose/rails/) tutorial for rails.
+> If you don't have rails installed you can run follows steps like the [docker-compose](https://docs.docker.com/compose/rails/) tutorial for rails.
 
 
 - Edit the file /rails_app/config/database.yml
