@@ -2,7 +2,7 @@
 &nbsp;
 
 ```sh
-$ git clone git@github.com:s030827/docker_compose_for_ruby_on_rails.git
+$ git clone git@github.com:s030827/docker_compose_for_ruby_on_rails.git name_of_your_application
 ```
 - Create a .env file on the root folder.
 
@@ -10,16 +10,13 @@ $ git clone git@github.com:s030827/docker_compose_for_ruby_on_rails.git
 $ touch .env
 ```
 
-- Enter into rails_app folder and create rails project with your preferences.
+- Enter into name_of_your_application folder and create rails project with your preferences.
+
 
 ```sh
-$ cd rails_app
-$ rails new . --webpack --database=postgresql -T
+$ cd name_of_your_application
+$ docker-compose run app rails new . --force --no-deps --database=postgresql -T -C
 ```
-
-> Obs:
-> If you don't have rails installed you can run follows steps like the [docker-compose](https://docs.docker.com/compose/rails/) tutorial for rails.
-
 
 - Edit the file /rails_app/config/database.yml
 ```
@@ -60,3 +57,8 @@ $ docker-compose build
 $ docker-compose run app rails db:create db:migrate
 $ docker-compose up
 ```
+
+> Obs:
+> [docker-compose](https://docs.docker.com/compose/rails/) tutorial for rails.
+> For specifying the Rails version edit the file rails_app/Gemfile.
+> For specifying the Ruby version edit the file rails_app/Dockerfile..
