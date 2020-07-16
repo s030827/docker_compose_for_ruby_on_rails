@@ -1,9 +1,11 @@
 # Initial Setup for rails 6 with docker-compose.
+
 &nbsp;
 
 ```sh
 $ git clone git@github.com:s030827/docker_compose_for_ruby_on_rails.git name_of_your_application
 ```
+
 - Create a .env file on the root folder.
 
 ```sh
@@ -19,6 +21,7 @@ $ docker-compose run app rails new . --force --no-deps --database=postgresql -T 
 ```
 
 - Edit the file /rails_app/config/database.yml
+
 ```
   default: &default
     adapter: postgresql
@@ -48,8 +51,6 @@ $ docker-compose run app rails new . --force --no-deps --database=postgresql -T 
   KEY_POSTGRES=UEAjc3N3b3JkOQo=
 ```
 
-- Edit your /rails_app/Gemfile and change the ruby version to the same that we defined on /rails_app/Dockerfile
-
 - On the root folder run.
 
 ```sh
@@ -59,6 +60,7 @@ $ docker-compose up
 ```
 
 > Obs:
-> [docker-compose](https://docs.docker.com/compose/rails/) tutorial for rails.
-> For specifying the Rails version edit the file rails_app/Gemfile.
-> For specifying the Ruby version edit the file rails_app/Dockerfile..
+
+- [docker-compose](https://docs.docker.com/compose/rails/) tutorial for rails.
+- For specifying the Rails version edit the file rails_app/Gemfile.
+- For specifying the Ruby version edit the file rails_app/Dockerfile.
